@@ -102,6 +102,17 @@ User.anonim = function () {
 let anon = User.anonim();
 console.log(anon.toString());
 
+let obj = {
+    name: 'Uga',
+    age: 18
+};
+User.userObject = function (obj) {
+    let a = {};
+    a.name = obj.name;
+    a.age = obj.age;
+    return a;
+};
+console.log(User.userObject(obj));
 // с объектом на входе не понял что нужно
 
 //----------------------------------------------------------------------------------------------------------------------
