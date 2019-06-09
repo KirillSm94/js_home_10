@@ -107,13 +107,13 @@ let obj = {
     age: 18
 };
 User.userObject = function (obj) {
-    let a = {};
+    let a = new User();
     a.name = obj.name;
     a.age = obj.age;
     return a;
 };
-console.log(User.userObject(obj));
-// с объектом на входе не понял что нужно
+console.log(User.userObject(obj).toString());
+// с объектом на входе не понял что нужно, но сделал как понял
 
 //----------------------------------------------------------------------------------------------------------------------
 
